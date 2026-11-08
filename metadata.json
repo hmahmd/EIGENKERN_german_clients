@@ -1,0 +1,6 @@
+{
+  "name": "EIGENKERN — Lokale KI für den Mittelstand",
+  "description": "Ihre eigene KI. In Ihrem Haus. Ihre Daten bleiben bei Ihnen. Keine Kosten pro Frage, keine Kosten pro Nutzer. EIGENKERN bietet DSGVO-konforme, lokale KI-Lösungen mit Wächter-Technologie.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-sans/700.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+
+@layer base {
+  :root {
+    --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+  
+  body {
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F4F7F8;
+    color: #122635;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar and utilities for technical German engineering aesthetic */
+::selection {
+  background-color: #087F83;
+  color: #ffffff;
+}
+
+/* Prevent horizontal overflow on entire document */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Ensure minimum touch target height */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Form input styling ensuring no auto-zoom on iOS */
+input, select, textarea {
+  font-size: 16px;
+}
+@media (min-width: 640px) {
+  input, select, textarea {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+.technical-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(215, 224, 228, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(215, 224, 228, 0.45) 1px, transparent 1px);
+}
+
+.technical-grid-dark {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Hide scrollbar for clean horizontal tabs on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
